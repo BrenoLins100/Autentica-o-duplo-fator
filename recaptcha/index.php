@@ -25,6 +25,8 @@
 
     <div class="container">
         <form method="POST" class="form-group">
+        <div class='toast toast-success'>Acesso permitido</div>
+        <div class='toast toast-error'>Acesso negado, resolva a reCaptcha</div>
             <label for="email" class="form-label">Email:</label>
             <input type="email" name="email" required class="form-input">
             <label for="senha" class="form-label">Senha:</label>
@@ -44,13 +46,9 @@
             }
 
             if($response != null && $response->success){
-                echo "<div class='toast toast-success'>
-                Acesso permitido
-              </div>";
+                echo "<script>document.querySelector('.toast-success').style.display = 'block'</script>";
             }else{
-                echo "<div class='toast toast-error'>
-                Acesso negado, resolva a reCaptcha
-              </div>";
+                echo "<script>document.querySelector('.toast-error').style.display = 'block'</script>";
             }
         ?>
       
