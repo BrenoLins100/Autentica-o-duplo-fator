@@ -5,8 +5,8 @@
 
 class ConfigEmail {
     
-    private $Email_Enviante = 'phpMailer2Etapas@gmail.com';
-    private $SenhaEmail_Enviante = 'phpMailerClaudio';
+    private $Email_Enviante = 'xxx@gmail.com';
+    private $SenhaEmail_Enviante = 'senhaEmailEnviant';
     private $EnviadoPor = 'nao-responda@php2etapas.com';
     private $AssuntoEmail;
     private $CorpoEmail;
